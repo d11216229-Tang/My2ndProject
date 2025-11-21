@@ -16,5 +16,6 @@ def safe_division(a, b):
     try:
         result = a / b
     except ZeroDivisionError:
-        return "Error: Division by zero is not allowed."
+        # return "Error: Division by zero is not allowed."
+        pass
     return result
