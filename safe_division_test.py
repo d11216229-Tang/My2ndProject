@@ -3,8 +3,8 @@ def safe_division(a, b):
     try:
         result = a / b
     except ZeroDivisionError:
-    #     return "Error: Division by zero is not allowed."
-        return result
+        return "Error: Division by zero is not allowed."
+    return result
 # 範例使用
 print(safe_division(10, 2))  # 輸出: 5.0
 print(safe_division(10, 0))  # 輸出: Error: Division by zero is not allowed.
