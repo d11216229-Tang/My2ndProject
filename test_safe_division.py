@@ -21,9 +21,9 @@ class TestSafeDivision(unittest.TestCase):
     
     def test_division_with_float_result(self):
         """Test division that results in float values."""
-        self.assertAlmostEqual(safe_division(7, 3), 2.3333333333333335)
-        self.assertAlmostEqual(safe_division(10, 3), 3.3333333333333335)
-        self.assertAlmostEqual(safe_division(1, 3), 0.3333333333333333)
+        self.assertAlmostEqual(safe_division(7, 3), 7/3, places=10)
+        self.assertAlmostEqual(safe_division(10, 3), 10/3, places=10)
+        self.assertAlmostEqual(safe_division(1, 3), 1/3, places=10)
     
     def test_division_by_zero(self):
         """Test division by zero returns error message."""
